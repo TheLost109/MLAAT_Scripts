@@ -1,0 +1,143 @@
+using System;
+using UnityEngine;
+
+public class AssetBundleManager : MonoBehaviour
+{
+    [Header("逆转小马驹三部曲")]
+    public AssetBundle MLAAT;
+    [Header("逆转风暴")]
+    public AssetBundle TS;
+    [Header("小马调查员")]
+    public AssetBundle MLI;
+    [Header("正义之元")]
+    public AssetBundle EoJ;
+
+    // 单例模式
+    public static AssetBundleManager Instance;
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
+    public void LoadAB(string BundleName)
+    {
+        try
+        {
+            switch (BundleName)
+            {
+                case "MLAAT":
+                    if (MLAAT == null) MLAAT = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/mlaat.unity3d");
+                    break;
+
+                case "TS":
+                    if (MLAAT == null) MLAAT = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/ts.unity3d");
+                    break;
+
+                case "MLI":
+                    if (MLAAT == null) MLAAT = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/mli.unity3d");
+                    break;
+
+                case "EoJ":
+                    if (MLAAT == null) MLAAT = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/eoj.unity3d");
+                    break;
+
+                default:
+                    break;
+            }
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError("AB包\"" + BundleName + "\"加载失败，错误信息：" + ex.Message);
+        }
+    }
+
+    public void UnloadAB(string BundleName)
+    {
+        try
+        {
+            switch (BundleName)
+            {
+                case "MLAAT":
+                    MLAAT.Unload(true);
+                    MLAAT = null;
+                    break;
+
+                case "TS":
+                    TS.Unload(true);
+                    TS = null;
+                    break;
+
+                case "MLI":
+                    MLI.Unload(true);
+                    MLI = null;
+                    break;
+
+                case "EoJ":
+                    EoJ.Unload(true);
+                    EoJ = null;
+                    break;
+
+                default:
+                    break;
+            }
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError("AB包\"" + BundleName + "\"卸载失败，错误信息：" + ex.Message);
+        }
+    }
+
+    public void UnloadAllAB()
+    {
+        try
+        {
+            MLAAT.Unload(true);
+            TS.Unload(true);
+            MLI.Unload(true);
+            EoJ.Unload(true);
+
+            MLAAT = null;
+            TS = null;
+            MLI = null;
+            EoJ = null;
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError("卸载所有AB包时发生错误，错误信息：" + ex.Message);
+        }
+    }
+
+    public UnityEngine.Object LoadAssetFromAB(string BundleName, string AssetName)
+    {
+        try
+        {
+            switch (BundleName)
+            {
+                case "MLAAT":
+                    return MLAAT.LoadAsset(AssetName);
+                case "TS":
+                    return TS.LoadAsset(AssetName);
+                case "MLI":
+                    return MLI.LoadAsset(AssetName);
+                case "EoJ":
+                    return EoJ.LoadAsset(AssetName);
+                default:
+                    return null;
+            }
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError("从AB包\"" + BundleName + "\"拉取资源\""+ AssetName +"\"失败，错误信息：" + ex.Message);
+            return null;
+        }
+    }
+
+}

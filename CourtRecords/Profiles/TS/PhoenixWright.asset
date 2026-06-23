@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1ed41a5d6594e48a03c311129d6d59, type: 3}
+  m_Name: PhoenixWright
+  m_EditorClassIdentifier: 
+  id: 0
+  Name: Phoenix Wright
+  NameCN: "\u6210\u6B65\u5802 \u9F99\u4E00"
+  State: 0
+  Sprite: {fileID: 6022530097003764629, guid: 884fb1d8579dacd418850b7ca0bb2c2a, type: 3}
+  Description: 'Of course, it''s me.
+
+    As a skilled newbie,
+
+    it''s been 3
+    years since I''m a Attorney.'
+  Description2: 'If you see this,
+
+    congratulations,
+
+    you found a bug!'
+  DescriptionCN: "\u5F53\u7136\uFF0C\u5C31\u662F\u6211\u672C\u4EBA\u3002\n\u8EAB\u4E3A\u65B0\u624B\u5B9E\u529B\u6D3E\u5F8B\u5E08\uFF0C\n\u5DF2\u7ECF\u662F\u4ECE\u4E8B\u8FD9\u884C\u7684\u7B2C\u4E09\u4E2A\u5E74\u5934\u4E86\u3002"
+  Description2CN: "\u5982\u679C\u4F60\u770B\u5230\u8FD9\u4E2A\uFF0C\n\u8BF4\u660E\u6E38\u620F\u51FAbug\u4E86\u3002"

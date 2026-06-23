@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6154c940c9991f745ab5b4036e644ca3, type: 3}
+  m_Name: Magatama
+  m_EditorClassIdentifier: 
+  id: 1
+  Name: Magatama
+  NameCN: "\u52FE\u7389"
+  Sprite: {fileID: -4249058036484946764, guid: 68c82516b130852489b0edbd1d187c36, type: 3}
+  Sprite2: {fileID: 0}
+  Description: 'A gift from Maya.
+
+    Allow me to see if anyone is hiding
+
+    any
+    deep secret in their heart from me.'
+  Description2: 'If you see this,
+
+    congratulations,
+
+    you found a bug!'
+  DescriptionCN: "\u771F\u5BB5\u7684\u793C\u7269\u3002\n\u4F1A\u5BF9\u5FC3\u4E2D\u85CF\u6709\u79D8\u5BC6\u7684\u4EBA\u4F5C\u51FA\u53CD\u5E94\u3002"
+  Description2CN: "\u5982\u679C\u4F60\u770B\u5230\u8FD9\u4E2A\uFF0C\n\u8BF4\u660E\u6E38\u620F\u51FAbug\u4E86\u3002"

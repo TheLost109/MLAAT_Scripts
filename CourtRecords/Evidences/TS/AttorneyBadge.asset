@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6154c940c9991f745ab5b4036e644ca3, type: 3}
+  m_Name: AttorneyBadge
+  m_EditorClassIdentifier: 
+  id: 0
+  Name: Attorney Badge
+  NameCN: "\u5F8B\u5E08\u5FBD\u7AE0"
+  State: 0
+  Sprite: {fileID: -780554400144614485, guid: 09b2b68ff935b9a42bfae88ed1720d4b, type: 3}
+  Description: 'I guess,
+
+    No one will admit that I''m a Attorney
+
+    if I don''t
+    have this.'
+  Description2: 'If you see this,
+
+    congratulations,
+
+    you found a bug!'
+  DescriptionCN: "\u6211\u60F3\uFF0C\n\u6CA1\u6709\u8FD9\u4E2A\uFF0C\n\u5C31\u6CA1\u6709\u4EBA\u4F1A\u627F\u8BA4\u6211\u662F\u5F8B\u5E08\u3002"
+  Description2CN: "\u5982\u679C\u4F60\u770B\u5230\u8FD9\u4E2A\uFF0C\n\u8BF4\u660E\u6E38\u620F\u51FAbug\u4E86\u3002"

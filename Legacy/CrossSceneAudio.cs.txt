@@ -1,0 +1,41 @@
+using UnityEngine;
+
+public class CrossSceneAudio : MonoBehaviour
+{
+    public AudioSource cancel;
+    public AudioSource enter_startup_screen;
+    public AudioSource kettei;
+
+    // 单例模式
+    public static CrossSceneAudio Instance;
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        AssetBundleManager.Instance.LoadAB("MLAAT_SE_TITLESCREEN");
+        AssetBundleManager.Instance.LoadAB("MLAAT_SE_UI");
+        cancel.clip = (AudioClip)AssetBundleManager.Instance.LoadAssetFromAB("MLAAT_SE_UI", "cancel");
+        enter_startup_screen.clip = (AudioClip)AssetBundleManager.Instance.LoadAssetFromAB("MLAAT_SE_TITLESCREEN", "enter_startup_screen");
+        kettei.clip = (AudioClip)AssetBundleManager.Instance.LoadAssetFromAB("MLAAT_SE_UI", "kettei");
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+}

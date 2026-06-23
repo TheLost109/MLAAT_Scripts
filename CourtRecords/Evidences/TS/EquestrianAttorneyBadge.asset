@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6154c940c9991f745ab5b4036e644ca3, type: 3}
+  m_Name: EquestrianAttorneyBadge
+  m_EditorClassIdentifier: 
+  id: 3
+  Name: Equestrian Attorney Badge
+  NameCN: "\u5C0F\u9A6C\u56FD\u5F8B\u5E08\u5FBD\u7AE0"
+  State: 0
+  Sprite: {fileID: 21300000, guid: d2cecddfb45206b4bbb3231301ef3019, type: 3}
+  Description: 'A Heart shaped badge that gives
+
+    all the privileges of an
+
+    Equestrian
+    defense Attorney.'
+  Description2: 'If you see this,
+
+    congratulations,
+
+    you found a bug!'
+  DescriptionCN: "\u4E00\u4E2A\u5FC3\u5F62\u7684\u5FBD\u7AE0\u3002\n\u6301\u6709\u8005\u62E5\u6709\u5C0F\u9A6C\u56FD\u8FA9\u62A4\u5F8B\u5E08\u7684\u4E00\u5207\u7279\u6743\u3002"
+  Description2CN: "\u5982\u679C\u4F60\u770B\u5230\u8FD9\u4E2A\uFF0C\n\u8BF4\u660E\u6E38\u620F\u51FAbug\u4E86\u3002"

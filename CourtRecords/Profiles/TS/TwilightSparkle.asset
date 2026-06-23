@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1ed41a5d6594e48a03c311129d6d59, type: 3}
+  m_Name: TwilightSparkle
+  m_EditorClassIdentifier: 
+  id: 1
+  Name: Twilight Sparkle
+  NameCN: "\u66AE\u5149\u95EA\u95EA"
+  State: 0
+  Sprite: {fileID: -4188351922845799023, guid: 17678dd5d591f134d93af7e0380e4baa, type: 3}
+  Description: 'A purple pony.
+
+    She bringed me to Equestria,
+
+    just for find
+    "The Greatest Denfense Attorney".'
+  Description2: 'If you see this,
+
+    congratulations,
+
+    you found a bug!'
+  DescriptionCN: "\u4E00\u53EA\u7D2B\u8272\u7684\u5C0F\u9A6C\u9A79\u3002\n\u4E3A\u4E86\u5BFB\u627E\u4E00\u540D\u4F18\u79C0\u7684\u8FA9\u62A4\u5F8B\u5E08\uFF0C\n\u5C06\u6211\u53EC\u5524\u5230\u4E86\u5C0F\u9A6C\u56FD\u3002"
+  Description2CN: "\u5982\u679C\u4F60\u770B\u5230\u8FD9\u4E2A\uFF0C\n\u8BF4\u660E\u6E38\u620F\u51FAbug\u4E86\u3002"
